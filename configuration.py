@@ -300,29 +300,3 @@ pkl_files = {
     }
 
 
-if __name__ == '__main__':
-
-
-    # gpcr_ligand_df = pd.read_csv('gpcr_ligand_.csv')
-    # rdkit_featurizer = deepchem.feat.RDKitDescriptors()
-
-    # features = rdkit_featurizer.featurize('CC1CN(CC(N1)C)CC2=CC=C(C=C2)C3=CC=CC=C3CN(CCC4=CC(=CC=C4)OC)C(=O)NC5CCCCC5')
-    # features = features.reshape((208,))
-    # desc_names = [rdkit_featurizer.descList[i][0] for i in range(len(rdkit_featurizer.descList))]
-    # columns = ['smiles'] + desc_names + ['labels']
-
-    # labels = list(gpcr_ligand_df['gpcr_binding_encoded'])
-    # smiles = list(gpcr_ligand_df['canonical_smiles'])
-    # desc_df = pd.DataFrame(columns=columns)
-    
-
-    # for i in range(len(smiles)):
-    #     features = rdkit_featurizer.featurize(smiles[i])
-    #     features = list(features.reshape((208,)))
-        
-    #     row = [smiles[i]] + features + [labels[i]]
-    #     desc_df.loc[len(desc_df)] = row
-
-    # print(desc_df)
-    
-    print(MLPClassifier().n_layers_)
